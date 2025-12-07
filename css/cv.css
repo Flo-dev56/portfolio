@@ -1,0 +1,29 @@
+
+/* .top{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap:300px;
+    margin-top: 20px;
+} */
+/* bloc1{
+    width: ;
+} */
+
+.photocv {
+    width: 150px;
+}
+h3{
+    font-weight: bold;
+}
+
+
+
+.bloc2 {
+  line-height: 1;
+
+}
+.bloc2 p {
+    margin-bottom: 4px;
+  }
+

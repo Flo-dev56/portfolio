@@ -1,14 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+	<meta charset="UTF-8" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+	<title>Mon portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
+	<link href="css/kowlider.css" rel="stylesheet" />
 </head>
+<header>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Mon portfolio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="CV.html">Mon CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="images.html">Images</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
 <body>
-    
+
+	<!-- Pour contenir le slider dans un bloc (lignes commentées ci-dessous), il faut activer le paramètre "fitParent" dans le javascript -->
+	<!-- <div style="margin:0 auto; height:200px; width:600px; border:2px solid red;"> -->
+	<div class="slider">
+		<img src="demo/assets/img/walle.jpg" alt="Kowlider image one" data-href="images.html" />
+		<img src="demo/assets/img/toystory.jpg" alt="Kowlider image two" data-href="html/page2.html" />
+		<img src="demo/assets/img/up.jpg" alt="Kowlider image three" data-href="html/page3.html" />
+		<img src="demo/assets/img/vaina.jpg" alt="Kowlider image four"
+			data-href="https://en.wikipedia.org/wiki/Moana_(2016_film)" target="_blank" />
+		<img src="demo/assets/img/nemo.jpg" alt="Kowlider image five" />
+	</div>
+	<!-- </div> -->
+
+
+	<!-- Pour afficher des textes (lignes commentées ci-dessous), il faut activer le paramètre "caption" dans le javascript -->
+	<!-- <div class="slider"> -->
+	<!-- <div class="element-wrapper"> -->
+	<!-- <img src="assets/img/nemo.jpg" data-txt="0" alt="kowlider image one" data-href="html/page1.html" /> -->
+	<!-- <h2 data-caption="one" data-txt="0">Text 1 of slide 1 sliding from left</h2> -->
+	<!-- <h3 data-caption="two" data-txt="0">Text 2 of slide 1 scale up</h3> -->
+	<!-- <p data-caption="three" data-txt="0">Text 3 of slide 1 sliding from bottom</p> -->
+	<!-- </div> -->
+	<!-- <div class="element-wrapper"> -->
+	<!-- <p data-caption="three" data-txt="1">Text 3 of slide 2 sliding from bottom</p> -->
+	<!-- <h3 data-caption="one" data-txt="1">Text 1 of slide 2 sliding from left</h3> -->
+	<!-- <h2 data-caption="two" data-txt="1">Text 2 of slide 2 scale up</h2> -->
+	<!-- <img src="assets/img/toystory.jpg" data-txt="1" alt="kowlider image two" /> -->
+	<!-- </div> -->
+	<!-- <div class="element-wrapper"> -->
+	<!-- <h3 data-caption="one" data-txt="2">Text 1 of slide 3 sliding from left</h3> -->
+	<!-- <h2 data-caption="two" data-txt="2">Text 2 of slide 3 scale up</h2> -->
+	<!-- <img src="assets/img/walle.jpg" data-txt="2" alt="kowlider image three" /> -->
+	<!-- </div> -->
+	<!-- </div> -->
+
+
+	<script src="js/kowlider.js"></script>
+
+	<script>
+		/* Kowlider Slider Options */
+		$('.slider').kowlider({
+			autoplay: true,
+			autospeed: 3, /* seconds, default=5 */
+			//fitParent: true,
+			//layout: 'fullscreen',
+			//caption: true, /* for text display */
+			//sliderShadow: true, /* add a shadow around the slider */
+			//pauseOnHover: true, /* pause autoplay on hover */
+			//loop: false, /* autoplay : the slider will not restart */
+			//control: false, /* hide controls */
+			//navigation: false, /* hide navigation */
+			//skin: 'amazing', //'classic'
+			//effect: 'sliceRotateX', //'blocksRandom', 'twix', 'slideTop', 'slideLeft', 'slideRight', 'sliceUpDown', 'sliceLeftTopToDown', 'sliceRightTopToDown', 'sliceLeftBottomToUp', 'sliceMixUpDown', 'sliceRightToLeft'
+		});
+	</script>
+
 </body>
-</html>
+<footer class="bg-body-tertiary text-center text-lg-start mt-5">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color:#F8F9FA;">
+			© 2025 Copyright: Florian EDOUARD
+		</div>
+		<!-- <div class="test">test</div> -->
+	<!-- Copyright -->
+</footer>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<title>Kowlider slider - Demo</title>
+	<link href="../css/kowlider.css" rel="stylesheet" />
+	<style>
+		body {
+			margin:0;
+			padding:0;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Pour contenir le slider dans un bloc (lignes commentées ci-dessous), il faut activer le paramètre "fitParent" dans le javascript -->
+	<!-- <div style="margin:0 auto; height:200px; width:600px; border:2px solid red;"> -->
+		<div class="slider">
+			<img src="assets/img/nemo.jpg" alt="Kowlider image one" data-href="html/page1.html" />
+			<img src="assets/img/toystory.jpg" alt="Kowlider image two" data-href="html/page2.html" />
+			<img src="assets/img/up.jpg" alt="Kowlider image three" data-href="html/page3.html" />
+			<img src="assets/img/vaina.jpg" alt="Kowlider image four" data-href="https://en.wikipedia.org/wiki/Moana_(2016_film)" target="_blank" />
+			<img src="assets/img/walle.jpg" alt="Kowlider image five" />
+		</div>
+	<!-- </div> -->
+	
+	
+	<!-- Pour afficher des textes (lignes commentées ci-dessous), il faut activer le paramètre "caption" dans le javascript -->
+	<!-- <div class="slider"> -->
+		<!-- <div class="element-wrapper"> -->
+			<!-- <img src="assets/img/nemo.jpg" data-txt="0" alt="kowlider image one" data-href="html/page1.html" /> -->
+			<!-- <h2 data-caption="one" data-txt="0">Text 1 of slide 1 sliding from left</h2> -->
+			<!-- <h3 data-caption="two" data-txt="0">Text 2 of slide 1 scale up</h3> -->
+			<!-- <p data-caption="three" data-txt="0">Text 3 of slide 1 sliding from bottom</p> -->
+		<!-- </div> -->
+		<!-- <div class="element-wrapper"> -->
+			<!-- <p data-caption="three" data-txt="1">Text 3 of slide 2 sliding from bottom</p> -->
+			<!-- <h3 data-caption="one" data-txt="1">Text 1 of slide 2 sliding from left</h3> -->
+			<!-- <h2 data-caption="two" data-txt="1">Text 2 of slide 2 scale up</h2> -->
+			<!-- <img src="assets/img/toystory.jpg" data-txt="1" alt="kowlider image two" /> -->
+		<!-- </div> -->
+		<!-- <div class="element-wrapper"> -->
+			<!-- <h3 data-caption="one" data-txt="2">Text 1 of slide 3 sliding from left</h3> -->
+			<!-- <h2 data-caption="two" data-txt="2">Text 2 of slide 3 scale up</h2> -->
+			<!-- <img src="assets/img/walle.jpg" data-txt="2" alt="kowlider image three" /> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+	
+	<script src="../js/kowlider.js"></script>
+	
+	<script>
+		/* Kowlider Slider Options */
+		$('.slider').kowlider({
+			autoplay: true,
+			autospeed: 3, /* seconds, default=5 */
+			//fitParent: true,
+			//layout: 'fullscreen',
+			//caption: true, /* for text display */
+			//sliderShadow: true, /* add a shadow around the slider */
+			//pauseOnHover: true, /* pause autoplay on hover */
+			//loop: false, /* autoplay : the slider will not restart */
+			//control: false, /* hide controls */
+			//navigation: false, /* hide navigation */
+			//skin: 'amazing', //'classic'
+			//effect: 'sliceRotateX', //'blocksRandom', 'twix', 'slideTop', 'slideLeft', 'slideRight', 'sliceUpDown', 'sliceLeftTopToDown', 'sliceRightTopToDown', 'sliceLeftBottomToUp', 'sliceMixUpDown', 'sliceRightToLeft'
+		});
+	</script>
+
+</body>
+</html>
